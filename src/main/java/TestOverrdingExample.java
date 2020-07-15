@@ -1,5 +1,5 @@
 
-public class TestOverriding {
+public class TestOverridingExample {
 
 	public static void main(String[] args) {
 		A a = new B();
@@ -9,17 +9,17 @@ public class TestOverriding {
 	}
 
 }
- class A{
+abstract class A{
 	
-	public void print(Integer i){
-		System.out.println(i);
-	}
+	public abstract void print(Integer s);
 
 	
 }
 class B extends A {
 	
-	
+	public void print(Integer i){
+		System.out.println(i);
+	}
 
 	public void print(String s){
 		System.out.println(s);
